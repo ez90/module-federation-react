@@ -1,7 +1,7 @@
 import { combineReducers, createStore, compose } from 'redux';
 
 const initialState = {
-    appName: 'host',
+    appName: 'fake',
 };
 
 const hostReducer = (state = initialState, action) => {
@@ -45,4 +45,4 @@ function createReducer(asyncReducers) {
     });
 }
 
-export const localStore = configureStore();
+export const fakeStore = configureStore();
